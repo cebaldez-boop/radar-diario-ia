@@ -9,8 +9,8 @@
     },
     {
       "name": "Notícias de IA",
-      "channel_id": "UCw0n9Ufqtyuj4cFsHShJr1w",
-      "handle": "@noticiasdeiaoficial",
+      "channel_id": "UCzHOZwqkA6vL6BN4RYwfvPA",
+      "handle": "@noticiasinteligenciaartificial",
       "language": "pt",
       "category": "ai_news"
     },
@@ -30,8 +30,8 @@
     },
     {
       "name": "Futurepedia",
-      "channel_id": "UCjq4bJEBFjmFq0KmOJOaTSg",
-      "handle": "@futurepedia_io",
+      "channel_id": "UCoM9lSqWLBEmhpPW1M83E6A",
+      "handle": "@futurepedia",
       "language": "en",
       "category": "ai_tools"
     },
@@ -44,21 +44,21 @@
     },
     {
       "name": "Julian Goldie SEO",
-      "channel_id": "UCMVhH4WOHqFSv2vSsEGrusg",
+      "channel_id": "UCGpsgNbzdF7BECCVbB1COHw",
       "handle": "@JulianGoldieSEO",
       "language": "en",
       "category": "ai_business"
     },
     {
       "name": "iampauljames",
-      "channel_id": "UC1vGae2Q3oT5MkhhfW8EuEA",
+      "channel_id": "UCj2zirDn1hkPKSARbARfeQw",
       "handle": "@iampauljames",
       "language": "en",
       "category": "ai_business"
     },
     {
       "name": "Greg Isenberg",
-      "channel_id": "UCwbBivdHEBCnOhikFfHeKfg",
+      "channel_id": "UCPjNBjflYl0-HQtUvOx0Ibw",
       "handle": "@GregIsenberg",
       "language": "en",
       "category": "startups"
@@ -73,7 +73,7 @@
     },
     {
       "name": "AI Jason",
-      "channel_id": "UCrXSVX9a1mj8l0CMLwKgMVw",
+      "channel_id": "UCPsOEI7VUdlJ1k8LtyUQ51Q",
       "handle": "@AIJason",
       "language": "en",
       "category": "ai_tutorials"
@@ -87,14 +87,14 @@
     },
     {
       "name": "Wes Roth",
-      "channel_id": "UC-TUoFRMOFgMStikMqzmNig",
+      "channel_id": "UCqcbQf6yw5KzRoDDcZ_wBSw",
       "handle": "@WesRoth",
       "language": "en",
       "category": "ai_news"
     },
     {
       "name": "David Shapiro",
-      "channel_id": "UCnl28cMGMFkFJ6fPIYDJRcg",
+      "channel_id": "UCvKRFNawVcuz4b9ihUTApCg",
       "handle": "@DaveShap",
       "language": "en",
       "category": "ai_philosophy"
@@ -102,7 +102,7 @@
     {
       "name": "AI Explained",
       "channel_id": "UCNJ1Ymd5yFuUPtn21xtRbbw",
-      "handle": "@AiExplained",
+      "handle": "@AIEXPLAINED-official",
       "language": "en",
       "category": "ai_explainers"
     }
