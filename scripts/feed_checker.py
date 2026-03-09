@@ -35,8 +35,20 @@ async def fetch_feed(channel_id: str, channel_name: str) -> list[dict]:
     videos = []
 
     try:
-        async with httpx.AsyncClient(timeout=30.0) as client:
-            response = await client.get(url)
+        async with httpx.AsyncClient(
+            timeout=30.0,
+            follow_redirects=True,
+            headers={"User-Agent": "Mozilla/5.0 (compatible; RadarIA/1.0)"},
+        ) as client:
+            # Tentar até 2 vezes em caso de erro temporário
+            response = None
+            for attempt in range(2):
+                response = await client.get(url)
+                if response.status_code == 200:
+                    break
+                if attempt == 0 and response.status_code in (404, 429, 500, 502, 503):
+                    import asyncio
+                    await asyncio.sleep(2)
             response.raise_for_status()
 
         feed = feedparser.parse(response.text)
