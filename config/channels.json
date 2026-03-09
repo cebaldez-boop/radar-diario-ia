@@ -1,0 +1,111 @@
+{
+  "channels": [
+    {
+      "name": "The AI Daily Brief",
+      "channel_id": "UCKelCK4ZaO6HeEI1KQjqzWA",
+      "handle": "@AIDailyBrief",
+      "language": "en",
+      "category": "ai_news"
+    },
+    {
+      "name": "Notícias de IA",
+      "channel_id": "UCw0n9Ufqtyuj4cFsHShJr1w",
+      "handle": "@noticiasdeiaoficial",
+      "language": "pt",
+      "category": "ai_news"
+    },
+    {
+      "name": "TheAIGRID",
+      "channel_id": "UCbY9xX3_jW5c2fjlZVBI4cg",
+      "handle": "@TheAiGrid",
+      "language": "en",
+      "category": "ai_news"
+    },
+    {
+      "name": "Matthew Berman",
+      "channel_id": "UCawZsQWqfGSbCI5yjkdVkTA",
+      "handle": "@matthew_berman",
+      "language": "en",
+      "category": "ai_reviews"
+    },
+    {
+      "name": "Futurepedia",
+      "channel_id": "UCjq4bJEBFjmFq0KmOJOaTSg",
+      "handle": "@futurepedia_io",
+      "language": "en",
+      "category": "ai_tools"
+    },
+    {
+      "name": "Two Minute Papers",
+      "channel_id": "UCbfYPyITQ-7l4upoX8nvctg",
+      "handle": "@TwoMinutePapers",
+      "language": "en",
+      "category": "ai_research"
+    },
+    {
+      "name": "Julian Goldie SEO",
+      "channel_id": "UCMVhH4WOHqFSv2vSsEGrusg",
+      "handle": "@JulianGoldieSEO",
+      "language": "en",
+      "category": "ai_business"
+    },
+    {
+      "name": "iampauljames",
+      "channel_id": "UC1vGae2Q3oT5MkhhfW8EuEA",
+      "handle": "@iampauljames",
+      "language": "en",
+      "category": "ai_business"
+    },
+    {
+      "name": "Greg Isenberg",
+      "channel_id": "UCwbBivdHEBCnOhikFfHeKfg",
+      "handle": "@GregIsenberg",
+      "language": "en",
+      "category": "startups"
+    },
+    {
+      "name": "Primal DEcode",
+      "channel_id": "PLACEHOLDER_PRIMAL_DECODE",
+      "handle": "@PrimalDEcode",
+      "language": "pt",
+      "category": "ai_content",
+      "note": "Canal do Carlos - atualizar channel_id quando disponivel"
+    },
+    {
+      "name": "AI Jason",
+      "channel_id": "UCrXSVX9a1mj8l0CMLwKgMVw",
+      "handle": "@AIJason",
+      "language": "en",
+      "category": "ai_tutorials"
+    },
+    {
+      "name": "Fireship",
+      "channel_id": "UCsBjURrPoezykLs9EqgamOA",
+      "handle": "@Fireship",
+      "language": "en",
+      "category": "tech_news"
+    },
+    {
+      "name": "Wes Roth",
+      "channel_id": "UC-TUoFRMOFgMStikMqzmNig",
+      "handle": "@WesRoth",
+      "language": "en",
+      "category": "ai_news"
+    },
+    {
+      "name": "David Shapiro",
+      "channel_id": "UCnl28cMGMFkFJ6fPIYDJRcg",
+      "handle": "@DaveShap",
+      "language": "en",
+      "category": "ai_philosophy"
+    },
+    {
+      "name": "AI Explained",
+      "channel_id": "UCNJ1Ymd5yFuUPtn21xtRbbw",
+      "handle": "@AiExplained",
+      "language": "en",
+      "category": "ai_explainers"
+    }
+  ],
+  "_instructions": "Para adicionar um canal: insira um novo objeto com name, channel_id, handle, language e category. Para encontrar o channel_id, visite o canal no YouTube > About > Share Channel > Copy Channel ID."
+}

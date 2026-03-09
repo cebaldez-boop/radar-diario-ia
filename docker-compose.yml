@@ -1,0 +1,61 @@
+version: '3.8'
+
+services:
+  # -------------------------------------------------------
+  # n8n - Orquestrador de workflows
+  # Acesse em: http://localhost:5678
+  # -------------------------------------------------------
+  n8n:
+    image: n8nio/n8n:latest
+    container_name: radar-n8n
+    restart: unless-stopped
+    ports:
+      - "5678:5678"
+    environment:
+      - N8N_BASIC_AUTH_ACTIVE=true
+      - N8N_BASIC_AUTH_USER=${N8N_BASIC_AUTH_USER:-admin}
+      - N8N_BASIC_AUTH_PASSWORD=${N8N_BASIC_AUTH_PASSWORD:-radar2026}
+      - GENERIC_TIMEZONE=${TZ:-America/Chicago}
+      - TZ=${TZ:-America/Chicago}
+      - N8N_DIAGNOSTICS_ENABLED=false
+      - N8N_HIRING_BANNER_ENABLED=false
+      - WEBHOOK_URL=http://localhost:5678/
+    volumes:
+      - ./n8n-data:/home/node/.n8n
+    networks:
+      - radar-network
+    depends_on:
+      - worker
+
+  # -------------------------------------------------------
+  # Worker - Servico Python que faz o processamento pesado
+  # API interna em http://worker:8000
+  # -------------------------------------------------------
+  worker:
+    build:
+      context: .
+      dockerfile: Dockerfile.worker
+    container_name: radar-worker
+    restart: unless-stopped
+    ports:
+      - "8000:8000"
+    environment:
+      - GEMINI_API_KEY=${GEMINI_API_KEY}
+      - EMAIL_SENDER=${EMAIL_SENDER}
+      - EMAIL_PASSWORD=${EMAIL_PASSWORD}
+      - EMAIL_RECIPIENT=${EMAIL_RECIPIENT:-cebaldez@gmail.com}
+      - SMTP_SERVER=${SMTP_SERVER:-smtp.gmail.com}
+      - SMTP_PORT=${SMTP_PORT:-587}
+      - WHISPER_MODEL=${WHISPER_MODEL:-base}
+      - TZ=${TZ:-America/Chicago}
+      - CRON_SCHEDULE=${CRON_SCHEDULE:-0 4 * * *}
+    volumes:
+      - ./data:/app/data
+      - ./config:/app/config
+      - ./templates:/app/templates
+    networks:
+      - radar-network
+
+networks:
+  radar-network:
+    driver: bridge

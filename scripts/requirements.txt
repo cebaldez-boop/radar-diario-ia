@@ -1,0 +1,31 @@
+# =============================================================
+# Radar Diário de IA - Dependências Python
+# =============================================================
+
+# API Framework
+fastapi==0.115.6
+uvicorn[standard]==0.34.0
+
+# YouTube
+yt-dlp>=2024.12.1
+feedparser==6.0.11
+
+# Gemini API
+google-generativeai>=0.8.0
+
+# Transcrição local (opcional - para rodar sem Gemini)
+faster-whisper==1.1.0
+
+# Email
+aiosmtplib==3.0.2
+
+# Agendamento
+apscheduler==3.10.4
+
+# Utilitários
+httpx==0.28.1
+python-dotenv==1.0.1
+jinja2==3.1.5
+pydantic==2.10.4
+pydantic-settings==2.7.1
+aiofiles==24.1.0
